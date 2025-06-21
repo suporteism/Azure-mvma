@@ -29,7 +29,7 @@ A cada etapa da formação, desafios são propostos para aplicar os conhecimento
 | Nº | Nome do Projeto | Link |
 |----|------------------|------|
 | 1  | Gerenciando Maquinas Virtuais no Azure | [Em construção](https://github.com/suporteism/azure-az104-DIO/blob/main/desafios/gerenciando-vms/README.md) |
-| 2  | Implementando Monitoramento no Azure | Em construção |
+| 2  | Implementando Monitoramento no Azure | [Em construção](https://github.com/suporteism/azure-az104-DIO/blob/main/desafios/monitoramento/README.md) |
 
 > Os projetos são organizados em pastas separadas com seus respectivos arquivos `README.md`.
 
