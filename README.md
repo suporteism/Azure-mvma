@@ -5,18 +5,18 @@
 
 ![Certificação AZ-104](https://img.shields.io/badge/Microsoft-AZ--104-blue?style=flat&logo=microsoft)
 
-Este repositório contém os desafios de projeto desenvolvidos ao longo da formação **Microsoft - Azure Administrator Certification (AZ-104)** oferecida pela [DIO (Digital Innovation One)](https://www.dio.me/).
+Este repositório reúne os desafios de projeto desenvolvidos ao longo da formação **Microsoft - Azure Administrator Certification (AZ-104)** oferecida pela [DIO (Digital Innovation One)](https://www.dio.me/).
 
 ## Sobre a Formação
 
-A trilha tem como objetivo preparar profissionais para administrar ambientes na nuvem utilizando o **Microsoft Azure**, abordando os principais serviços e ferramentas exigidos pela certificação **AZ-104: Azure Administrator Associate**.
+Esta trilha visa preparar profissionais para administrar ambientes na nuvem utilizando o **Microsoft Azure**, abordando os principais serviços e ferramentas exigidos pela certificação **AZ-104: Azure Administrator Associate**.
 
-Durante o curso, são apresentados conceitos como:
+Durante o curso, são abordados temas como:
 
-- Fundamentos da computação em nuvem e Azure
+- Fundamentos de computação em nuvem e Azure
 - Modelos de serviço e implantação (IaaS, PaaS, SaaS)
 - Gerenciamento de recursos com Azure Portal, CLI e PowerShell
-- Configuração de redes, VMs e balanceadores de carga
+- Configuração de redes, máquinas virtuais e balanceadores de carga
 - Gerenciamento de identidades com Azure Active Directory (Azure AD)
 - Segurança, políticas, backups e monitoramento de recursos
 
@@ -24,23 +24,25 @@ Durante o curso, são apresentados conceitos como:
 
 A cada etapa da formação, desafios são propostos para aplicar os conhecimentos aprendidos na prática.
 
-## Sumário de Desafios de Projeto
+## Sumário de Desafios
 
-| Nº | Nome do Projeto | Link |
-|----|------------------|------|
-| 1  | Gerenciando Maquinas Virtuais no Azure | [Em construção](https://github.com/suporteism/azure-az104-DIO/blob/main/desafios/gerenciando-vms/README.md) |
-| 2  | Implementando Monitoramento no Azure | [Em construção](https://github.com/suporteism/azure-az104-DIO/blob/main/desafios/monitoramento/README.md) |
+| Nº | Projeto | Link |
+|----|-----------------------------|------|
+| 1  | Gerenciando Máquinas Virtuais no Azure | [Acessar](./desafios/gerenciando-vms/README.md) |
+| 2  | Implementando Monitoramento no Azure    | [Acessar](./desafios/monitoramento/README.md) |
 
-> Os projetos são organizados em pastas separadas com seus respectivos arquivos `README.md`.
+> Cada desafio está documentado em seu próprio `README.md` com imagens e explicações passo a passo.
 
 ---
 
 ## Autor
 
-Desenvolvido por [Ismael Silva](https://github.com/suporteism) durante os estudos de certificação na plataforma DIO.
+Desenvolvido por [Ismael Silva](https://github.com/suporteism) durante os estudos de certificação na plataforma [DIO](https://www.dio.me/).
 
 ---
 
 ## Contribuições
 
-Sinta-se à vontade para clonar, utilizar, compartilhar ou contribuir com sugestões por meio de *issues* ou *pull requests*.
+Fique à vontade para clonar, utilizar, compartilhar ou contribuir com sugestões por meio de *issues* ou *pull requests*.
+
+---
