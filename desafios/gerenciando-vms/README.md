@@ -27,7 +27,7 @@ Criar e gerenciar máquinas virtuais Linux no Azure, explorando operações esse
 
 📸 **Visualização no portal:**
 
-![VMs no portal Azure](./images/azure-vms-criadas-portal.png)!
+![VMs no portal Azure](./images/azure-vms-criadas-portal.png)
 
 ---
 
@@ -42,12 +42,12 @@ Criar e gerenciar máquinas virtuais Linux no Azure, explorando operações esse
 ### 3. Gerenciamento com Azure CLI
 
 Comandos executados via terminal para controle direto das VMs.
+![Login no Azure via CLI.](./images/azlogin.png)
+
 
 ```bash
 # Login no Azure
 az login
-
-![Login no Azure via CLI.](./images/azlogin.png)
 
 # (Opcional) Definir assinatura
 az account set --subscription "Nome da assinatura"
