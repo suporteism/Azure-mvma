@@ -42,6 +42,9 @@ Criar e gerenciar máquinas virtuais Linux no Azure, explorando operações esse
 ### 3. Gerenciamento com Azure CLI
 
 Comandos executados via terminal para controle direto das VMs.
+
+Azlogin
+
 ![Login no Azure via CLI.](./images/azlogin.png)
 
 
