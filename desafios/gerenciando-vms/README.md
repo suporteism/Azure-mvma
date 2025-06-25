@@ -57,6 +57,12 @@ Criar e gerenciar máquinas virtuais Linux no Azure, explorando operações esse
 
 ![DetachDisk](./images/detachdisk.png)
 
+![azdetachdisk](./images/azdetachdisk.png)
+
+![listdiskportal](./images/listdiskportal.png)
+
+![azlistdiskportal](./images/azlistdiskportal.png)
+
 ---
 
 ### 4. Gerenciamento com Azure CLI
@@ -113,6 +119,9 @@ az vm restart \
   --name lab01-az104-2 \
   --resource-group rg-az104gmva
 ```
+
+![azrestartvm](./images/azrestartvm.png)
+
 ```
 # Obter status detalhado da VM
 az vm get-instance-view \
@@ -120,6 +129,9 @@ az vm get-instance-view \
   --resource-group rg-az104gmva \
   --output table
 ```
+
+![azdetailvm](./images/azdetailvm.png)
+
 ```
 # Abrir porta (ex: SSH)
 az vm open-port \
@@ -141,6 +153,13 @@ az vm disk detach \
   --vm-name lab01-az104-1 \
   --resource-group rg-az104gmva
 ```
+
+![azdetachdisk](./images/azdetachdisk.png)
+
+![listdiskportal](./images/listdiskportal.png)
+
+![azlistdiskportal](./images/azlistdiskportal.png)
+
 
 ## Estrutura da Pasta
 
