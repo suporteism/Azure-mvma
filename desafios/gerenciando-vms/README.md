@@ -33,7 +33,7 @@ Criar e gerenciar máquinas virtuais Linux no Azure, explorando operações esse
 
 ![tela 01-04](./images/azimp04.png)
 
-**Visualização no portal:**
+**Visualização no portal VMs iniciadas:**
 
 ![VMs no portal Azure](./images/azure-vms-criadas-portal.png)
 
