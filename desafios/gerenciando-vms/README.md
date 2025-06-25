@@ -25,7 +25,7 @@ Criar e gerenciar máquinas virtuais Linux no Azure, explorando operações esse
 - Local: `Brazil South`
 - Grupo de recursos: `rg-az104gmva`
 
-📸 **Visualização no portal:**
+**Visualização no portal:**
 
 ![VMs no portal Azure](./images/azure-vms-criadas-portal.png)
 
@@ -43,10 +43,17 @@ Criar e gerenciar máquinas virtuais Linux no Azure, explorando operações esse
 
 Comandos executados via terminal para controle direto das VMs.
 
-Azlogin
+azlogin
 
 ![Login no Azure via CLI.](./images/azlogin.png)
 
+az account set
+
+![azccountset](azaccount.png)
+
+az vm list -d -o table
+
+![azlistvm](azlistvm.png)
 
 ```bash
 # Login no Azure
