@@ -25,6 +25,14 @@ Criar e gerenciar máquinas virtuais Linux no Azure, explorando operações esse
 - Local: `Brazil South`
 - Grupo de recursos: `rg-az104gmva`
 
+![tela 01-01](./images/azimp01.png)
+
+![tela 01-02](./images/azimp02.png)
+
+![tela 01-03](./images/azimp03.png)
+
+![tela 01-04](./images/azimp04.png)
+
 **Visualização no portal:**
 
 ![VMs no portal Azure](./images/azure-vms-criadas-portal.png)
@@ -92,7 +100,7 @@ az vm open-port \
   --resource-group rg-az104gmva \
   --port 22
 
-# Desanexar disco de dados (exemplo)
+# Desanexar disco de dados
 az vm disk detach \
   --name datadisk01 \
   --vm-name lab01-az104-1 \
