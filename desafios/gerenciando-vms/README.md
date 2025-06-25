@@ -44,6 +44,9 @@ Criar e gerenciar máquinas virtuais Linux no Azure, explorando operações esse
 - Simulação de manutenção via **Portal Azure**
 - Anexado manualmente o disco de dados
 - Reflete uma tarefa típica de suporte ou ajuste de armazenamento
+
+![AddDisk](./images/adddisk.png)
+
 ---
 
 ### 3. Desanexando Disco da Máquina
@@ -51,6 +54,8 @@ Criar e gerenciar máquinas virtuais Linux no Azure, explorando operações esse
 - Simulação de manutenção via **Portal Azure**
 - Desanexado manualmente o disco de dados
 - Reflete uma tarefa típica de suporte ou ajuste de armazenamento
+
+![DetachDisk](./images/detachdisk.png)
 
 ---
 
@@ -86,12 +91,22 @@ az vm stop \
   --name lab01-az104-1 \
   --resource-group rg-az104gmva
 ```
+
+![stopvm](./images/azstopvm.png)
+
+![stopvmportal](./images/stopvmportal.png)
+
 ```
 # Iniciar uma VM
 az vm start \
   --name lab01-az104-1 \
   --resource-group rg-az104gmva
 ```
+
+![azstartvm](./images/azstartvm.png)
+
+![startvmportal](./images/startvmportal.png)
+
 ```
 # Reiniciar uma VM
 az vm restart \
@@ -115,6 +130,10 @@ az vm open-port \
 
 ![aznrgrule](./images/aznrgrule.png)
 
+**Acessando via SSH**
+
+![acessossh](./images/acessossh.png)
+
 ```
 # Desanexar disco de dados
 az vm disk detach \
@@ -129,12 +148,22 @@ az vm disk detach \
 desafios/
 └── gerenciando-vms/
     ├── images/
-    │   ├── azure-vms-criadas-portal.png
-    │   ├── azlogin.png
+    │   ├── acessossh.png
+    │   ├── adddisk.png
     │   ├── azaccount.png
+    │   ├── azimp01.png
+    │   ├── azimp02.png
+    │   ├── azimp03.png
+    │   ├── azimp04.png
     │   ├── azlistvm.png
+    │   ├── azlogin.png
     │   ├── aznrgrule.png
-    │   └── azimp01.png ...
+    │   ├── azstartvm.png
+    │   ├── azstopvm.png
+    │   ├── azure-vms-criadas-portal.png
+    │   ├── detachdisk.png
+    │   ├── startvmportal.png
+    │   └── stopvmportal.png
     └── README.md
 ```
 
