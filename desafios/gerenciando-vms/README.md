@@ -170,17 +170,22 @@ desafios/
     │   ├── acessossh.png
     │   ├── adddisk.png
     │   ├── azaccount.png
+    │   ├── azdetachdisk.png
+    │   ├── azdetailvm.png
     │   ├── azimp01.png
     │   ├── azimp02.png
     │   ├── azimp03.png
     │   ├── azimp04.png
+    │   ├── azlistdiskportal.png
     │   ├── azlistvm.png
     │   ├── azlogin.png
     │   ├── aznrgrule.png
+    │   ├── azrestartvm.png
     │   ├── azstartvm.png
     │   ├── azstopvm.png
     │   ├── azure-vms-criadas-portal.png
     │   ├── detachdisk.png
+    │   ├── listdiskportal.png
     │   ├── startvmportal.png
     │   └── stopvmportal.png
     └── README.md
