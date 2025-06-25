@@ -39,7 +39,14 @@ Criar e gerenciar máquinas virtuais Linux no Azure, explorando operações esse
 
 ---
 
-### 2. Desanexando Disco da Máquina
+### 2. Anexando Disco da Máquina
+
+- Simulação de manutenção via **Portal Azure**
+- Anexado manualmente o disco de dados
+- Reflete uma tarefa típica de suporte ou ajuste de armazenamento
+---
+
+### 3. Desanexando Disco da Máquina
 
 - Simulação de manutenção via **Portal Azure**
 - Desanexado manualmente o disco de dados
@@ -47,61 +54,92 @@ Criar e gerenciar máquinas virtuais Linux no Azure, explorando operações esse
 
 ---
 
-### 3. Gerenciamento com Azure CLI
+### 4. Gerenciamento com Azure CLI
 
 Comandos executados via terminal para controle direto das VMs.
 
-azlogin
-
-![Login no Azure via CLI.](./images/azlogin.png)
-
-az account set
-
-![azccountset](./images/azaccount.png)
-
-az vm list -d -o table
-
-![azlistvm](./images/azlistvm.png)
 
 ```bash
 # Login no Azure
 az login
+```
 
+![Login no Azure via CLI.](./images/azlogin.png)
+
+```
 # (Opcional) Definir assinatura
 az account set --subscription "Nome da assinatura"
+```
 
+![azccountset](./images/azaccount.png)
+
+```
 # Listar todas as VMs com status
 az vm list -d -o table
+```
 
+![azlistvm](./images/azlistvm.png)
+
+```
 # Parar uma VM
 az vm stop \
   --name lab01-az104-1 \
   --resource-group rg-az104gmva
-
+```
+```
 # Iniciar uma VM
 az vm start \
   --name lab01-az104-1 \
   --resource-group rg-az104gmva
-
+```
+```
 # Reiniciar uma VM
 az vm restart \
   --name lab01-az104-2 \
   --resource-group rg-az104gmva
-
+```
+```
 # Obter status detalhado da VM
 az vm get-instance-view \
   --name lab01-az104-1 \
   --resource-group rg-az104gmva \
   --output table
-
+```
+```
 # Abrir porta (ex: SSH)
 az vm open-port \
   --name lab01-az104-1 \
   --resource-group rg-az104gmva \
   --port 22
+```
 
+![aznrgrule](./images/aznrgrule.png)
+
+```
 # Desanexar disco de dados
 az vm disk detach \
   --name datadisk01 \
   --vm-name lab01-az104-1 \
   --resource-group rg-az104gmva
+```
+
+## Estrutura da Pasta
+
+```
+desafios/
+└── gerenciando-vms/
+    ├── images/
+    │   ├── azure-vms-criadas-portal.png
+    │   ├── azlogin.png
+    │   ├── azaccount.png
+    │   ├── azlistvm.png
+    │   ├── aznrgrule.png
+    │   └── azimp01.png ...
+    └── README.md
+```
+
+## Referências
+
+- [Início Rápido: Criar uma máquina virtual do Linux no portal do Azure](https://learn.microsoft.com/pt-br/azure/virtual-machines/linux/quick-create-portal?tabs=ubuntu)
+- [Tutorial Oficial - CLI: Gerenciar VMs no Azure](https://learn.microsoft.com/pt-br/azure/virtual-machines/windows/tutorial-manage-vm)
+- [Documentação Oficial do Azure CLI](https://learn.microsoft.com/pt-br/cli/azure/)
