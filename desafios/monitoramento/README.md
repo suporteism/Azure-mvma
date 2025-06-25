@@ -14,31 +14,33 @@ Este repositório foi criado como parte do desafio prático da formação AZ-104
 
 ## Cenário do Laboratório
 
-- Recurso monitorado: `az104-11-vm0`
-- Grupo de Recursos: `az104-rg11`
-- Evento monitorado: Exclusão da VM
-- Ação: Envio de alerta por e-mail
-- Consulta: Log query para rastrear atividade de deleção
+- Grupo de Recursos: `rg-az104gmva`
+- Recursos monitorados: 
+  - Máquina virtual `lab01-az104-1`
+  - Máquina virtual `lab01-az104-2`
+- Evento monitorado: Exclusão de qualquer uma das VMs
+- Ação: Envio de alerta por e-mail via Action Group
+- Consulta: Log query para rastrear atividade de deleção das VMs
 
 ## Etapas do Projeto
 
-### Task 1 – Criar a VM `az104-11-vm0`
-Provisionamento da máquina virtual Linux/Windows para testes.
+### Task 1 – Criar as VMs `lab01-az104-1` e `lab01-az104-2`
+Provisionamento das máquinas virtuais no Azure, com monitoramento habilitado para ambas.
 
-### Task 2 – Criar alerta para deleção da VM
-Configuração de um alerta com base no Activity Log.
+### Task 2 – Criar alerta para deleção das VMs
+Configuração de um alerta baseado no Azure Activity Log para capturar eventos de exclusão das VMs.
 
 ### Task 3 – Criar Action Group
-Envio de e-mail automático quando o alerta for disparado.
+Criação de um grupo de ação que envia notificação por e-mail sempre que o alerta for disparado.
 
 ### Task 4 – Disparar o alerta
-Simulação da exclusão da VM para validação da regra.
+Simulação da exclusão de uma das VMs para validar o alerta e o acionamento do Action Group.
 
 ### Task 5 – Adicionar regra de processamento
-Aplicar filtros ou supressões conforme necessidade.
+Aplicação de regras para controlar notificações ou ignorar alertas repetidos.
 
 ### Task 6 – Consultar logs com KQL
-Visualização dos eventos em Log Analytics usando consultas personalizadas.
+Uso do Log Analytics para visualizar eventos no Azure Activity Log com consultas KQL.
 
 ## Captura de Tela do Fluxo
 
@@ -50,7 +52,7 @@ Imagem disponível na pasta `/images`:
 - Documentação oficial:  
   https://learn.microsoft.com/pt-br/azure/azure-monitor/vm/vminsights-overview
 
-- Exemplo de consulta KQL para identificar deleção de VM:
+- Exemplo de consulta KQL para identificar deleção de VMs:
 
 ```kql
 AzureActivity
