@@ -49,11 +49,11 @@ azlogin
 
 az account set
 
-![azccountset](azaccount.png)
+![azccountset](./images/azaccount.png)
 
 az vm list -d -o table
 
-![azlistvm](azlistvm.png)
+![azlistvm](./images/azlistvm.png)
 
 ```bash
 # Login no Azure
