@@ -1,4 +1,4 @@
-# Projeto: Monitoramento de Máquinas Virtuais no Azure (Em andamento)
+# Desafio: Monitoramento de Máquinas Virtuais no Azure (Em andamento)
 
 ## Objetivo
 
