@@ -27,6 +27,18 @@ Este repositório foi criado como parte do desafio prático da formação AZ-104
 ### Task 1 – Criar as VMs `lab01-az104-1` e `lab01-az104-2`
 Provisionamento das máquinas virtuais no Azure, com monitoramento habilitado para ambas.
 
+
+## Observações sobre compatibilidade
+
+As VMs utilizadas neste laboratório estavam baseadas na imagem `Ubuntu 24.04 LTS`, que atualmente **não é compatível com o Dependency Agent** necessário para mapas de dependência (VM Insights completo). Por isso, a solução de monitoramento foi adaptada para utilizar apenas o **Azure Monitor Agent (AMA)** com um Data Collection Rule (DCR).
+
+Essa abordagem permite:
+
+- Coleta de métricas básicas (CPU, memória, disco)
+- Envio de logs ao Log Analytics Workspace
+- Criação de alertas com base em métricas via Azure Monitor
+
+
 ### Task 2 – Criar alerta para deleção das VMs
 Configuração de um alerta baseado no Azure Activity Log para capturar eventos de exclusão das VMs.
 
@@ -51,6 +63,7 @@ Imagem disponível na pasta `/images`:
 
 - Documentação oficial:  
   https://learn.microsoft.com/pt-br/azure/azure-monitor/vm/vminsights-overview
+  https://learn.microsoft.com/pt-br/training/modules/configure-monitoring-virtual-machines/
 
 - Exemplo de consulta KQL para identificar deleção de VMs:
 
