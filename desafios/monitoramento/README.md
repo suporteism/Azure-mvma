@@ -14,6 +14,10 @@ Este repositório foi criado como parte do desafio prático da formação AZ-104
 
 ## Cenário do Laboratório
 
+**Desenho do cenário a ser criado.**
+
+![Imagem](images/cenario.png)
+
 - Grupo de Recursos: `rg-az104gmva`
 - Recursos monitorados: 
   - Máquina virtual `lab01-az104-1`
