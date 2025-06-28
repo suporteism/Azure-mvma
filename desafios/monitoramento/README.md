@@ -49,8 +49,39 @@ Essa abordagem permite:
 ### Task 2 – Criar alerta para deleção das VMs
 Configuração de um alerta baseado no Azure Activity Log para capturar eventos de exclusão das VMs.
 
+
+![Create an alert rule](images/car-task2.png)
+
+
+![Condition Delete VM](images/condition-task2.png)
+**Observação sobre Severidade do Alerta:** Este alerta foi configurado com base no Azure Activity Log, utilizando o sinal Delete Virtual Machine (Virtual Machines).
+
+Neste tipo de alerta:
+A severidade (severity) não pode ser definida manualmente como em alertas baseados em métricas.
+O nível de severidade é atribuído automaticamente pelo Azure, conforme a classificação do evento.
+É possível utilizar o filtro Event Level durante a configuração para limitar o escopo a eventos críticos, erros ou informativos.
+Embora não seja possível personalizar a severidade neste cenário, a exclusão de uma máquina virtual representa um evento crítico e deve ser monitorada com alta prioridade, especialmente em ambientes de produção ou testes sensíveis.
+
+
+
+
 ### Task 3 – Criar Action Group
 Criação de um grupo de ação que envia notificação por e-mail sempre que o alerta for disparado.
+
+Nesta etapa, criamos um Action Group no Azure para envio de alertas por e-mail. O grupo foi nomeado **InfraCloudBR-ADMS** com o nome de exibição **icbr-adms**, e está configurado para enviar notificações para infracloudbr@gmail.com sempre que o alerta for disparado.
+
+
+**Criando o Grupo de ações**
+
+![Create Action Group](images/actgroup-task3.png)
+
+
+
+
+
+
+
+
 
 ### Task 4 – Disparar o alerta
 Simulação da exclusão de uma das VMs para validar o alerta e o acionamento do Action Group.
