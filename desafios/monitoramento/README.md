@@ -31,8 +31,11 @@ Este repositório foi criado como parte do desafio prático da formação AZ-104
 ### Task 1 – Criar as VMs `lab01-az104-1` e `lab01-az104-2`
 Provisionamento das máquinas virtuais no Azure, com monitoramento habilitado para ambas.
 
+![lab01-az104-1](images/vm01.png)
 
-## Observações sobre compatibilidade
+![lab01-az104-2](images/vm02.png)
+
+**Observações sobre compatibilidade**
 
 As VMs utilizadas neste laboratório estavam baseadas na imagem `Ubuntu 24.04 LTS`, que atualmente **não é compatível com o Dependency Agent** necessário para mapas de dependência (VM Insights completo). Por isso, a solução de monitoramento foi adaptada para utilizar apenas o **Azure Monitor Agent (AMA)** com um Data Collection Rule (DCR).
 
