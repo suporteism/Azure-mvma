@@ -1,4 +1,4 @@
-# Desafio: Monitoramento de Máquinas Virtuais no Azure (Em andamento)
+# Desafio: Monitoramento de Máquinas Virtuais no Azure
 
 ## Objetivo
 
@@ -162,11 +162,9 @@ Send to Log Analytics workspace → escolha seu lab01-monitor
 
 ![Configurando o diagnostic Settings](images/diagset-task6.png)
 
-
-
 ## Dicas e Notas
 
 - Documentação oficial:  
   https://learn.microsoft.com/pt-br/azure/azure-monitor/vm/vminsights-overview
   https://learn.microsoft.com/pt-br/training/modules/configure-monitoring-virtual-machines/
-
+  https://learn.microsoft.com/pt-br/azure/azure-monitor/platform/activity-log?tabs=powershell
